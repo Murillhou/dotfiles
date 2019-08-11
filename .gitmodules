@@ -1,0 +1,18 @@
+[submodule ".zim"]
+	path = .zim
+	url = https://github.com/zimfw/zimfw.git
+[submodule ".nvm"]
+	path = .nvm
+	url = https://github.com/creationix/nvm.git
+[submodule ".rvm"]
+	path = .rvm
+	url = https://github.com/rvm/rvm.git
+[submodule ".autojump"]
+	path = .autojump
+	url = https://github.com/wting/autojump.git
+[submodule ".zsh"]
+	path = .zsh
+	url = git@github.com:eckelon/zsh-private-config.git
+[submodule ".vim/vim-plug"]
+	path = .vim/vim-plug
+	url = https://github.com/junegunn/vim-plug.git

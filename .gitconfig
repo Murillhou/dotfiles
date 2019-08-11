@@ -1,0 +1,40 @@
+# This is Git's per-user configuration file.
+[alias]
+	last = log -1 --stat
+	cp = cherry-pick
+	co = checkout
+	ci = commit
+	st = status -sb
+	br = branch
+	unstage = reset HEAD --
+	diff = diff -w
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative
+
+	find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
+	addu = add -u
+[color]
+; I want colors!
+	ui = always
+[push]
+	default = simple
+	required = true
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = nvim
+	autocrlf = false
+
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3
+[user]
+	name = JA Samitier
+	email = email@jasamitier.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3

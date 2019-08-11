@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+nbproject/
+Foo.java
+.DS_Store
+update-notifier-npm.json
+node_modules/
+.history/
+fuge_ja.yml
+fuge/fuge_*yml
+localEnvs.sh
+tags
+tags.lock
+tags.temp
+!tags/

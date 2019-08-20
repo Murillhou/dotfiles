@@ -6,11 +6,9 @@ Plug 'airblade/vim-gitgutter' "shows a git diff in the gutter (sign column) and 
 Plug 'tpope/vim-git', { 'for': 'gitcommit' } "Git runtime files
 
 " gui
-Plug 'joshdick/onedark.vim'
 Plug 'Yggdroot/indentLine' "highlighting 4sp indenting
 Plug 'ap/vim-css-color', { 'for': 'css' } "Preview colours in source code while editing
 Plug 'itchyny/lightline.vim' "A light and configurable statusline/tabline plugin for Vim
-Plug 'HendrikPetertje/vimify' " Run spotify from vim
 Plug 'arcticicestudio/nord-vim' " nice colorscheme
 
 "programming
@@ -21,6 +19,8 @@ Plug 'editorconfig/editorconfig-vim' "editorconfig support
 Plug 'alvan/vim-closetag', { 'for': ['html', 'xml'] }
 Plug 'elzr/vim-json', { 'for': 'json'}
 Plug '~/.vim/npm-test-plugin', { 'for': 'javascript' }
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'tpope/vim-surround'
 
 " better navigation
 Plug 'andymass/vim-matchup' "even better %. Navigate and highlight matching words
@@ -32,9 +32,9 @@ Plug 'tpope/vim-vinegar' "Combine with netrw to create a delicious salad dressin
 Plug 'junegunn/vim-slash' "Enhancing in-buffer search experience
 Plug 'tpope/vim-sensible' "Defaults everyone can agree on
 Plug 'tpope/vim-sleuth' "Heuristically set buffer options
+Plug 'skywind3000/asyncrun.vim' "Run Async Shell Commands in Vim 8.0 / NeoVim and Output to Quickfix Window
 
 " javascript
-Plug 'ludovicchabant/vim-gutentags', {'for': ['javascript', 'js', 'ts']}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'digitaltoad/vim-pug', {'for': 'jade'}

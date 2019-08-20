@@ -32,3 +32,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+alias git-clean-local-branches="git branch -vv | grep -E \"desaparecido|gone\" | awk '{print $1}' | xargs -n1 git branch -d"
